@@ -11,6 +11,9 @@ import reactjs from "./assets/images/reactjs.png";
 import jsdefinitiveguide from './assets/images/books/jsdefinitiveguide.jpg';
 import jsaltodesempenho from './assets/images/books/jsaltodesempenho.jpg';
 import padroesjs from './assets/images/books/padroesjs.jpg';
+import intropython from './assets/images/books/intropython.jpg';
+import pyFluente from './assets/images/books/pyFluente.jpg';
+import pensePython from './assets/images/books/pensePython.jpg';
 
 function App() {
 
@@ -42,9 +45,20 @@ function App() {
             <p>javascript é uma das linguagens mais populares quando o assunto é desenvolvimento web hoje em dia.</p>
           </div>
 
-        <BookBox bookName="javascript o guia definitivo" bookimage={jsdefinitiveguide} afiliateLink="https://amzn.to/3hPrXJ2"/>
-        <BookBox bookName="javascript de alto desempenho" bookimage={jsaltodesempenho} afiliateLink="https://amzn.to/35Veyga"/>
-        <BookBox bookName="padrões javascript" bookimage={padroesjs} afiliateLink="https://amzn.to/3vJmewC"/>
+        <BookBox 
+          bookName="javascript o guia definitivo" 
+          bookimage={jsdefinitiveguide} 
+          afiliateLink="https://amzn.to/3hPrXJ2"/>
+        
+        <BookBox 
+          bookName="javascript de alto desempenho" 
+          bookimage={jsaltodesempenho} 
+          afiliateLink="https://amzn.to/35Veyga"/>
+
+        <BookBox 
+          bookName="padrões javascript" 
+          bookimage={padroesjs} 
+          afiliateLink="https://amzn.to/3vJmewC"/>
 
         </section>
 
@@ -57,7 +71,21 @@ function App() {
             <p>Segundo pesquisas o python vem crescendo de popularidade nos ultimos tempos. Quando o assunto é python fica difícil de pensar o que não da pra fazer...</p>
           </div>
 
-          <BookBox/>
+        <BookBox 
+          bookName="Introdução à Programação com Python" 
+          bookimage={intropython} 
+          afiliateLink="https://amzn.to/3MtSg5T"/>
+
+        <BookBox 
+          bookName="Python Fluente: Programação Clara, Concisa e Eficaz" 
+          bookimage={pyFluente} 
+          afiliateLink="https://amzn.to/3MuIAYL"/>
+
+        <BookBox 
+          bookName="Pense em Python: Pense Como um Cientista da Computação" 
+          bookimage={pensePython} 
+          afiliateLink="https://amzn.to/3730lOx"/>
+        
 
         </section>
         
@@ -71,6 +99,8 @@ function App() {
           </div>
 
           <BookBox/>
+          <BookBox/>
+          <BookBox/>
 
         </section>
 
@@ -83,6 +113,8 @@ function App() {
             <p>Criado pelo Facebook, o react é uma framework frontend onde você consegue desenvolver um frontend escalável e maravilhoso. </p>
           </div>
 
+          <BookBox/>
+          <BookBox/>
           <BookBox/>
 
         </section>
