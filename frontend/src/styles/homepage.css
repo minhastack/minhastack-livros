@@ -42,3 +42,15 @@ hr{
     align-items: center;
 
 }
+
+.language-section .container-logo-language{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.language-section .container-logo-language img{
+    width:100px;
+    margin-right: 20px;
+    border-radius: 5px;
+}

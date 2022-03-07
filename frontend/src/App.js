@@ -1,11 +1,22 @@
 
-import BookBox from "./components/book-container/book-box";
+import BookBox from "./components/book-container";
 import TextBox from "./components/text-box";
 import "./styles/homepage.css";
+//logos 
+import javascript from "./assets/images/javascript.png";
+import python from "./assets/images/python.png";
+import nodejs from "./assets/images/nodejs.png";
+import reactjs from "./assets/images/reactjs.png";
+// books
+import jsdefinitiveguide from './assets/images/books/jsdefinitiveguide.jpg';
+import jsaltodesempenho from './assets/images/books/jsaltodesempenho.jpg';
+import padroesjs from './assets/images/books/padroesjs.jpg';
 
 function App() {
+
   return (
-    <div className="App">
+
+<div className="App">
 
       <div className="principal-text">
         <h1>Que bom que você está aqui!</h1>  
@@ -21,11 +32,62 @@ function App() {
 
       <hr/>
 
+
+        <section className="language-section">
+
+          <h2>O queridinho da web</h2>
+
+          <div className="container-logo-language">
+            <img src={javascript} alt="javascript logo"/> 
+            <p>javascript é uma das linguagens mais populares quando o assunto é desenvolvimento web hoje em dia.</p>
+          </div>
+
+        <BookBox bookName="javascript o guia definitivo" bookimage={jsdefinitiveguide} afiliateLink="https://amzn.to/3hPrXJ2"/>
+        <BookBox bookName="javascript de alto desempenho" bookimage={jsaltodesempenho} afiliateLink="https://amzn.to/35Veyga"/>
+        <BookBox bookName="padrões javascript" bookimage={padroesjs} afiliateLink="https://amzn.to/3vJmewC"/>
+
+        </section>
+
+        <section className="language-section">
+
+          <h2>O faz tudo</h2>
+
+          <div className="container-logo-language">
+            <img src={python} alt="python logo"/> 
+            <p>Segundo pesquisas o python vem crescendo de popularidade nos ultimos tempos. Quando o assunto é python fica difícil de pensar o que não da pra fazer...</p>
+          </div>
+
+          <BookBox/>
+
+        </section>
         
-        <BookBox/>
-        <BookBox/>
-        <BookBox/>
-        <BookBox/>
+        <section className="language-section">
+
+          <h2>O revolucionário</h2>
+
+          <div className="container-logo-language">
+            <img src={nodejs} alt="node js logo"/> 
+            <p>Esse aqui conseguiu transcender. Não é uma linguagem de programação, é uma plataforma que fez com que o javascript saisse do frontend e conseguisse ser usado também no backend. Então, esse é o cara!</p>
+          </div>
+
+          <BookBox/>
+
+        </section>
+
+        <section className="language-section">
+
+          <h2>O popular e filho de pai rico.</h2>
+
+          <div className="container-logo-language">
+            <img src={reactjs} alt="python logo"/> 
+            <p>Criado pelo Facebook, o react é uma framework frontend onde você consegue desenvolver um frontend escalável e maravilhoso. </p>
+          </div>
+
+          <BookBox/>
+
+        </section>
+
+        
 
 
 
