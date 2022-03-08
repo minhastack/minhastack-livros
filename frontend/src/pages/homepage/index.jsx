@@ -1,32 +1,49 @@
 import './style.css';
 import Header from "../../components/header";
 import TextBox from "../../components/text-box";
+import ConfettiComponent from '../../components/confetti';
 
-const HomePage = ()=>{
+
+const HomePage = () => {
+    
     return (
-        <div className="container-principal">      
-        <Header/>
 
-        <div className="principal-text">
-            <h1>Que bom que você está aqui!</h1>  
+        <div className="container-principal">
+
+            <ConfettiComponent className="conffeti"
+                drawShape={ctx => {
+                    ctx.beginPath()
+                    for (let i = 0; i < 22; i++) {
+                        const angle = 0.35 * i
+                        const x = (0.2 + (1.5 * angle)) * Math.cos(angle)
+                        const y = (0.2 + (1.5 * angle)) * Math.sin(angle)
+                        ctx.lineTo(x, y)
+                    }
+                    ctx.stroke()
+                    ctx.closePath()
+                }}
+            />
+            <Header />
+
+            <div className="principal-text">
+                <h1>Que bom que você está aqui!</h1>
+            </div>
+
+            <div className="cta-container-text">
+
+                <TextBox text="Tenha acesso as grandes mentes do mercado da programação através de suas obras" />
+                <TextBox text="Comece bem e do jeito certo, com conteúdos reconhecidos em todo mercado!" />
+                <TextBox text="Tenha acesso as grandes mentes do mercado da programação através de suas obras" />
+
+            </div>
+
+            <div className="cta-container-button">
+                <a href="/books" className="cta-button-default">Começar agora</a>
+            </div>
+
+            <hr />
+
         </div>
-        
-        <div className="cta-container-text">
-
-              <TextBox 
-              title="Já imaginou ser um iniciante na programação e ter acesso a mente de profissionais qualificados no mercado?" 
-              text="Eu constumo dizer que os livros são uma extensão da mente humana. Com eles conseguimos ter acesso à mente das pessoas mais incríveis do mundo que depositaram alí, parte do seu conhecimento sobre determinado assunto." 
-              text2 ="Então pensando nisso, desenvolvemos esse site para você que precisa de um norte e quer ter acesso aos um dos melhores conteúdos sobre programação da internet."/>
-
-        </div>     
-
-        <div className="cta-container-button">
-            <a href="/books" className="cta-button-default">Começar agora</a> 
-        </div>
-
-      <hr/>
-
-      </div>
 
     )
 }

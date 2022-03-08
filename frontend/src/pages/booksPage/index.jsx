@@ -20,9 +20,10 @@ function BooksPage() {
 
   return (
 
-<div className="App">
+<div className="container-principal">
 
-      <Header></Header>
+      <Header/>
+
         <section className="language-section">
 
           <h2>O queridinho da web</h2>
