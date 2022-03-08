@@ -1,4 +1,7 @@
 .text-box{
+    display: flex;
+    align-items:center;
+    justify-content: center;
     width: 180px;
     height: 180px;
     text-align: left;
@@ -7,4 +10,9 @@
     border-radius: 30px;
     margin-bottom: 50px;
     padding: 30px;
+}
+
+.text-box p{
+    border-left: solid 1px black;
+    padding-left: 10px;
 }

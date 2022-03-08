@@ -31,3 +31,18 @@ hr{
     text-decoration: none;
     box-shadow: 0 0 .5em #1882FF;
 }
+
+
+@media all and (min-width : 786px) {
+
+    .cta-container-text{
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }   
+
+    .cta-container-button{
+        margin-top: 50px;
+    }
+
+}

@@ -6,7 +6,7 @@ const ConfettiComponent = () => {
  
   return (
     <Confetti 
-        recycle={false}
+      recycle={false}
       width={width}
       height={height}
     />

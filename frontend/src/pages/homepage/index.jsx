@@ -33,7 +33,7 @@ const HomePage = () => {
 
                 <TextBox text="Tenha acesso as grandes mentes do mercado da programação através de suas obras" />
                 <TextBox text="Comece bem e do jeito certo, com conteúdos reconhecidos em todo mercado!" />
-                <TextBox text="Tenha acesso as grandes mentes do mercado da programação através de suas obras" />
+                <TextBox text="Seja um ponto fora da curva se destacando com mais conhecimento que a maioria dos outros devs." />
 
             </div>
 

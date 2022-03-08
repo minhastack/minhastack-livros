@@ -6,9 +6,7 @@ return(
         <div className='container-logo'>
             <img src={Minhastacklogo} alt='logo minhastack'/>    
         </div> 
-        <nav className='container-menu'>
-            <a href="/">Início</a>
-        </nav>
+
     </header>
 );
 }

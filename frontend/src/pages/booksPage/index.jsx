@@ -20,95 +20,108 @@ function BooksPage() {
 
   return (
 
-<div className="container-principal">
+    <div className="container-principal">
 
-      <Header/>
+      <Header />
 
-        <section className="language-section">
+      <section className="language-section">
 
-          <h2>O queridinho da web</h2>
-
+        <div className="container-description-language">
           <div className="container-logo-language">
-            <img src={javascript} alt="javascript logo"/> 
-            <p>javascript é uma das linguagens mais populares quando o assunto é desenvolvimento web hoje em dia.</p>
+            <img src={javascript} alt="javascript logo" />
+            <h2>O queridinho da web</h2>
           </div>
 
-        <BookBox 
-          bookName="javascript o guia definitivo" 
-          bookimage={jsdefinitiveguide} 
-          afiliateLink="https://amzn.to/3hPrXJ2"/>
-        
-        <BookBox 
-          bookName="javascript de alto desempenho" 
-          bookimage={jsaltodesempenho} 
-          afiliateLink="https://amzn.to/35Veyga"/>
+          <p>javascript é uma das linguagens mais populares quando o assunto é desenvolvimento web hoje em dia.</p>
 
-        <BookBox 
-          bookName="padrões javascript" 
-          bookimage={padroesjs} 
-          afiliateLink="https://amzn.to/3vJmewC"/>
+        </div>
 
-        </section>
+        <nav className="container-books">
+          <BookBox
+            bookName="javascript o guia definitivo"
+            bookimage={jsdefinitiveguide}
+            afiliateLink="https://amzn.to/3hPrXJ2" />
+          <BookBox
+            bookName="javascript de alto desempenho"
+            bookimage={jsaltodesempenho}
+            afiliateLink="https://amzn.to/35Veyga" />
+          <BookBox
+            bookName="padrões javascript"
+            bookimage={padroesjs}
+            afiliateLink="https://amzn.to/3vJmewC" />
+        </nav>
+      </section>
 
-        <section className="language-section">
+      <section className="language-section">
 
-          <h2>O faz tudo</h2>
+        <div className="container-description-language">
+          <div className="container-logo-language">
+            <img src={python} alt="python logo" />
+            <h2>O faz tudo</h2>
+          </div>
+          <p>Segundo pesquisas o python vem crescendo de popularidade nos ultimos tempos. Quando o assunto é python fica difícil de pensar o que não da pra fazer...</p>
+        </div>
+
+        <nav className="container-books">
+          <BookBox
+            bookName="Introdução à Programação com Python"
+            bookimage={intropython}
+            afiliateLink="https://amzn.to/3MtSg5T" />
+
+          <BookBox
+            bookName="Python Fluente: Programação Clara, Concisa e Eficaz"
+            bookimage={pyFluente}
+            afiliateLink="https://amzn.to/3MuIAYL" />
+
+          <BookBox
+            bookName="Pense em Python: Pense Como um Cientista da Computação"
+            bookimage={pensePython}
+            afiliateLink="https://amzn.to/3730lOx" />
+        </nav>
+      </section>
+
+
+
+      <section className="language-section">
+
+        <div className="container-description-language">
+          <div className="container-logo-language">
+            <img src={nodejs} alt="node js logo" />
+            <h2>O revolucionário</h2>
+          </div>
+          <p>Esse aqui conseguiu transcender. Não é uma linguagem de programação, é uma plataforma que fez com que o javascript saisse do frontend e conseguisse ser usado também no backend. Então, esse é o cara!</p>
+        </div>
+
+        <div className="container-books">
+          <BookBox />
+          <BookBox />
+          <BookBox />
+        </div>
+
+      </section>
+
+
+
+      <section className="language-section">
+
+        <div className="container-description-language">
 
           <div className="container-logo-language">
-            <img src={python} alt="python logo"/> 
-            <p>Segundo pesquisas o python vem crescendo de popularidade nos ultimos tempos. Quando o assunto é python fica difícil de pensar o que não da pra fazer...</p>
+            <img src={reactjs} alt="python logo" />
+          <h2>Filho de pai rico.</h2>
           </div>
 
-        <BookBox 
-          bookName="Introdução à Programação com Python" 
-          bookimage={intropython} 
-          afiliateLink="https://amzn.to/3MtSg5T"/>
-
-        <BookBox 
-          bookName="Python Fluente: Programação Clara, Concisa e Eficaz" 
-          bookimage={pyFluente} 
-          afiliateLink="https://amzn.to/3MuIAYL"/>
-
-        <BookBox 
-          bookName="Pense em Python: Pense Como um Cientista da Computação" 
-          bookimage={pensePython} 
-          afiliateLink="https://amzn.to/3730lOx"/>
-        
-
-        </section>
-        
-        <section className="language-section">
-
-          <h2>O revolucionário</h2>
-
-          <div className="container-logo-language">
-            <img src={nodejs} alt="node js logo"/> 
-            <p>Esse aqui conseguiu transcender. Não é uma linguagem de programação, é uma plataforma que fez com que o javascript saisse do frontend e conseguisse ser usado também no backend. Então, esse é o cara!</p>
-          </div>
-
-          <BookBox/>
-          <BookBox/>
-          <BookBox/>
-
-        </section>
-
-        <section className="language-section">
-
-          <h2>O popular e filho de pai rico.</h2>
-
-          <div className="container-logo-language">
-            <img src={reactjs} alt="python logo"/> 
             <p>Criado pelo Facebook, o react é uma framework frontend onde você consegue desenvolver um frontend escalável e maravilhoso. </p>
-          </div>
+        </div>
 
-          <BookBox/>
-          <BookBox/>
-          <BookBox/>
+        <nav className="container-books">
 
-        </section>
+          <BookBox />
+          <BookBox />
+          <BookBox />
 
-        
-
+        </nav>
+      </section>
 
 
     </div>
