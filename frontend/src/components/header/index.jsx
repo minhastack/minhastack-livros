@@ -4,7 +4,9 @@ const Header = ()=>{
 return(   
      <header>
         <div className='container-logo'>
-            <img src={Minhastacklogo} alt='logo minhastack'/>    
+            <a href="../">
+                <img src={Minhastacklogo} alt='logo minhastack'/>
+            </a>    
         </div> 
 
     </header>
