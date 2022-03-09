@@ -1,13 +1,61 @@
 .container-principal{
     text-align: center;
+    overflow-x: hidden;
+}
+
+.container-cta-principal-text{
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-cta-principal-text .text-box{
+    margin: 10px;
+}
+
+.container-cta-principal-text:nth-child(2){
+    line-height: 1.4rem;
+}
+
+.arrow-icon{
+    text-align: center;
+    width: 100vw;
+    font-size: 4rem;
+    background: transparent;
+    border: none;
+    color: #6A0BD9;
+    animation-name: arrow-float;
+    animation-duration: .5s; 
+    animation-iteration-count: infinite ;
+    animation-direction: alternate-reverse;
+
+}
+.arrow-icon p{
+    font-size: 16px;
+    margin-bottom: -.5px;
+}
+
+@keyframes arrow-float {
+    0% {
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(10px);
+    }
+    0% {
+        transform: translateY(0);
+    }
+
 }
 
 .language-section {
-    border-top: solid 1px;
+
     display:  flex; 
     align-items: center;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin: 50px auto 100px;
 
 }
 .container-logo-language{
@@ -37,6 +85,12 @@
 }
 
 @media all and (min-width : 786px) {
+
+    .container-cta-principal-text .text-box{
+        width: 60%;
+        height: 200px;
+    }
+    
     .language-section{
         flex-direction: column;
     }

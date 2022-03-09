@@ -3,6 +3,8 @@ import "./style.css";
 //components
 import BookBox from "../../components/book-container";
 import Header from "../../components/header";
+import Textbox from "../../components/text-box";
+import { AiOutlineArrowDown } from 'react-icons/ai';
 //logos 
 import javascript from "../../assets/images/techs/javascript.png";
 import python from "../../assets/images/techs/python.png";
@@ -24,7 +26,19 @@ function BooksPage() {
 
       <Header />
 
-      <section className="language-section">
+      <div className="container-cta-principal-text">
+        <Textbox
+          text="Se você é novo na programação e está perdido ou só está em busca de coisas para agregar nos seus conhecimentos, você está no lugar certo. Temos diversas alternativas a baixo onde descrevemos brevemente sobre elas de maneira simples"
+
+/>
+      </div>
+
+      <a className="arrow-icon" href="#principal-content">
+        <p>Clique em mim</p>
+        <AiOutlineArrowDown />
+      </a>
+
+      <section className="language-section" id="principal-content">
 
         <div className="container-description-language">
           <div className="container-logo-language">
@@ -108,10 +122,10 @@ function BooksPage() {
 
           <div className="container-logo-language">
             <img src={reactjs} alt="python logo" />
-          <h2>Filho de pai rico.</h2>
+            <h2>Filho de pai rico.</h2>
           </div>
 
-            <p>Criado pelo Facebook, o react é uma framework frontend onde você consegue desenvolver um frontend escalável e maravilhoso. </p>
+          <p>Criado pelo Facebook, o react é uma framework frontend onde você consegue desenvolver um frontend escalável e maravilhoso. </p>
         </div>
 
         <nav className="container-books">

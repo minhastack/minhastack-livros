@@ -1,5 +1,5 @@
-import './style.css';
 import Minhastacklogo from '../../assets/images/Minhastack-logo.png';
+import './style.css';
 const Header = ()=>{
 return(   
      <header>
