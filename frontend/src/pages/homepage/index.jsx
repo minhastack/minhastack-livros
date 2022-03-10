@@ -2,6 +2,7 @@ import Header from "../../components/header";
 import './style.css';
 import TextBox from "../../components/text-box";
 import ConfettiComponent from '../../components/confetti';
+import { Link } from "react-router-dom";
 
 
 const HomePage = () => {
@@ -60,7 +61,7 @@ const HomePage = () => {
             </div>
 
             <div className="cta-container-button">
-                <a href="/books" className="cta-button-default">Começar agora</a>
+                <Link to="/books" className="cta-button-default">Começar agora</Link>
             </div>
 
             <hr />

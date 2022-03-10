@@ -1,15 +1,18 @@
 
-import {Routes, Route} from 'react-router-dom';
+import {HashRouter ,Routes, Route, BrowserRouter} from 'react-router-dom';
 import HomePage from '../pages/homepage/';
 import BooksPage from '../pages/booksPage';
-
+import App from '../App'
 const MainRoutes = ()=>{
     return (
-        <Routes>
-            <Route path="/" element={<HomePage/>}/>
-            <Route path="/books" element={<BooksPage/>}/>
+        <BrowserRouter>
+        
+            <Routes>
+                    <Route  path='/' element={<HomePage/>}/>
+                    <Route path="/books" element={<BooksPage/>}/>
+            </Routes>
 
-        </Routes>
+        </BrowserRouter>
 
         )
 } 
